@@ -4,10 +4,14 @@
   "description": "JavaScript development environment Pluralsight course by Oduor Cynthia",
   "scripts": {
     "prestart": "babel-node scripts/startMessage.js",
-    "start": "npm-run-all --parallel open:src",
+    "start": "npm-run-all --parallel open:src lint:watch test:watch",
     "open:src": "babel-node scripts/server.js",
+    "lint": "esw webpack.config.* src scripts --color",
+    "lint:watch": "npm run lint -- --watch",
     "localtunnel": "lt --port 3000",
-    "share": "npm-run-all --parallel open:src localtunnel"
+    "share": "npm-run-all --parallel open:src localtunnel",
+    "test":"mocha --reporter progress scripts/testSetup.js \"src/**/*.test.js\"",
+    "test:watch": "npm run test -- --watch"
   },
   "author": "Oduor Cynthia",
   "license": "TUK",
