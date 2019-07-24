@@ -1,0 +1,28 @@
+{
+  "users": [
+    {
+      "id": 98954825,
+      "firstName": "Ada",
+      "lastName": "Wuckert",
+      "email": "Korey77@hotmail.com"
+    },
+    {
+      "id": 47462193,
+      "firstName": "Abigail",
+      "lastName": "Stamm",
+      "email": "Dolly_Harris@hotmail.com"
+    },
+    {
+      "id": 28211788,
+      "firstName": "Loy",
+      "lastName": "Yost",
+      "email": "Domenick41@yahoo.com"
+    },
+    {
+      "id": 29538197,
+      "firstName": "Savanna",
+      "lastName": "Zemlak",
+      "email": "Wilfred_Hammes45@yahoo.com"
+    }
+  ]
+}

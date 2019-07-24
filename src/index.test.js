@@ -10,7 +10,7 @@ describe('First Test', () => {
 
 //DOM Testing
 describe('index.html', () => {
-  it('should say finally', (done) => {
+  it('should have h1 that says Users', (done) => {
     //read the contents in index.html,
     //store the read content into an in memory DOM i.e the fs
     //and equate the results of the above to an index constant
@@ -19,7 +19,7 @@ describe('index.html', () => {
     //configuring jsdom test
     jsdom.env(index, function(err, window){
       const h1 = window.document.getElementsByTagName('h1')[0];
-      expect(h1.innerHTML).to.equal('Finally!!');
+      expect(h1.innerHTML).to.equal('Users');
       done(); //setting up the async
       window.close();
     });
